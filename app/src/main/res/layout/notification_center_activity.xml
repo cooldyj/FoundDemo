@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.chinayszc.mobile.widget.CommonTitleView
+        android:id="@+id/notification_center_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/app_bg_color"/>
+
+    <FrameLayout
+        android:id="@+id/notification_center_coupon"
+        android:layout_width="match_parent"
+        android:background="@drawable/me_item_selector"
+        android:layout_height="@dimen/me_item_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/me_item_height"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:gravity="center_vertical"
+            android:text="@string/coupon_notify"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_middle" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/me_item_height"
+            android:layout_gravity="right"
+            android:layout_marginRight="12dp"
+            android:contentDescription="into icon"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/into_icon" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <FrameLayout
+        android:id="@+id/notification_center_points"
+        android:layout_width="match_parent"
+        android:background="@drawable/me_item_selector"
+        android:layout_height="@dimen/me_item_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/me_item_height"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:gravity="center_vertical"
+            android:text="@string/points_notify"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_middle" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/me_item_height"
+            android:layout_gravity="right"
+            android:layout_marginRight="12dp"
+            android:contentDescription="into icon"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/into_icon" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <FrameLayout
+        android:id="@+id/notification_center_others"
+        android:layout_width="match_parent"
+        android:background="@drawable/me_item_selector"
+        android:layout_height="@dimen/me_item_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/me_item_height"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:gravity="center_vertical"
+            android:text="@string/others_notify"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_middle" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/me_item_height"
+            android:layout_gravity="right"
+            android:layout_marginRight="12dp"
+            android:contentDescription="into icon"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/into_icon" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+</LinearLayout>

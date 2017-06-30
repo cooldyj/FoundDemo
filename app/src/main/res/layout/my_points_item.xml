@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/my_point_detail"
+        android:layout_width="120dp"
+        android:layout_height="59dp"
+        android:layout_marginLeft="@dimen/app_margin_left"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="注册送积分"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_middle" />
+
+    <TextView
+        android:id="@+id/my_point_num"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/app_margin_left"
+        android:gravity="center_vertical"
+        android:text="+100"
+        android:textColor="@color/text_light_red"
+        android:textSize="@dimen/text_middle" />
+
+    <TextView
+        android:id="@+id/my_point_date"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/my_point_num"
+        android:layout_toRightOf="@id/my_point_detail"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="2016-08-08 20:12:11"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_middle" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color"
+        android:layout_below="@id/my_point_detail"/>
+
+</RelativeLayout>

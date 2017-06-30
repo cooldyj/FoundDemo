@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/point_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/point_item_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/point_mall_image_width"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="goods icon"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/point_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:text="红色便捷钱包"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_15" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/points"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_15" />
+
+            <TextView
+                android:id="@+id/point_item_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="1024"
+                android:textColor="@color/text_light_red"
+                android:textSize="@dimen/text_15" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

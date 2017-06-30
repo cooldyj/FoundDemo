@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <com.chinayszc.mobile.widget.CommonTitleView
+        android:id="@+id/register_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app_margin_left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/phone_number"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_middle" />
+
+            <EditText
+                android:id="@+id/register_phone_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:background="@null"
+                android:hint="@string/input_phone_num"
+                android:imeActionLabel="@string/phone_num_not_null"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_middle" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app_margin_left"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/verify_code"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_middle" />
+
+            <EditText
+                android:id="@+id/register_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/input_code"
+                android:imeActionLabel="@string/psw_not_null"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_middle" />
+
+            <TextView
+                android:id="@+id/register_get_code"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:background="@drawable/verify_code_bg"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="@string/get_code"
+                android:textColor="@color/verify_code_color"
+                android:textSize="@dimen/text_small" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app_margin_left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/set_psw"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_middle" />
+
+            <EditText
+                android:id="@+id/register_set_psw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:background="@null"
+                android:hint="@string/pls_input_your_psw"
+                android:imeActionLabel="@string/phone_num_not_null"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_middle" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app_margin_left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/invited_code"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_middle" />
+
+            <EditText
+                android:id="@+id/register_invite_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:background="@null"
+                android:hint="@string/input_invite_code"
+                android:imeActionId="@+id/register_code_et"
+                android:imeActionLabel="@string/phone_num_not_null"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_middle" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color" />
+
+        <TextView
+            android:id="@+id/register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/common_btn_bg"
+            android:gravity="center"
+            android:text="@string/register_txt"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_middle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="right"
+                android:text="注册账户表示您同意"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_middle" />
+            <TextView
+                android:id="@+id/register_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="right"
+                android:text="@string/user_agreement"
+                android:textColor="@color/colorPrimaryBlue"
+                android:textSize="@dimen/text_middle" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

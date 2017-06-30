@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.chinayszc.mobile.widget.CommonTitleView
+        android:id="@+id/invite_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@color/app_bg_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/reward_method"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_middle" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/reward_method_1"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_middle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/invite_moment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@mipmap/wechat_icon"
+                    android:gravity="center"
+                    android:text="@string/moments"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    android:id="@+id/invite_wechat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@mipmap/wx_icon"
+                    android:gravity="center"
+                    android:text="@string/wechat"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    android:id="@+id/invite_qqzone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@mipmap/qqzone_icon"
+                    android:gravity="center"
+                    android:text="@string/qqzone"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    android:id="@+id/invite_qq_friends"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@mipmap/qq_icon"
+                    android:gravity="center"
+                    android:text="@string/qq_friends"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    android:id="@+id/invite_sina_weibo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@mipmap/sina_icon"
+                    android:gravity="center"
+                    android:text="@string/sina_weibo"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/text_small" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/reward_method_2"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_middle" />
+
+            <FrameLayout
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:background="@mipmap/qr_code_bg">
+
+                <ImageView
+                    android:id="@+id/invite_qr_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="qr code" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

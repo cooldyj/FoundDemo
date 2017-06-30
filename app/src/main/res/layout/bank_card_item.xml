@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+
+    <ImageView
+        android:id="@+id/bank_card_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3dp"
+        android:contentDescription="bank card icon" />
+
+    <TextView
+        android:id="@+id/bank_card_quota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/bank_card_icon"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/bank_card_icon"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:text="单笔1万"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/text_middle" />
+
+    <TextView
+        android:id="@+id/bank_card_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/bank_card_icon"
+        android:layout_alignTop="@id/bank_card_icon"
+        android:layout_toLeftOf="@id/bank_card_quota"
+        android:layout_toRightOf="@id/bank_card_icon"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:text="工商银行"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_middle" />
+
+</RelativeLayout>

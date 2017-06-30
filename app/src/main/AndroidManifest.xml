@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chinayszc.mobile">
+
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 磁盘读取权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>。
+    <!-- 手机状态读取权限，用来获取设备id(IMEI) -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".module.main.LauncherActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".module.main.MainNavigationActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <!-- 主页Activities Start -->
+        <activity
+            android:name=".module.home.activity.PointMallActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.activity.ExchangeableActivity"
+            android:screenOrientation="portrait" />
+        <!--<activity
+            android:name=".widget.lrecyclerview.EndlessGridLayoutActivity"
+            android:screenOrientation="portrait" />-->
+        <activity
+            android:name=".module.home.activity.ConvertRecordsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.activity.MyPointsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.activity.GetPointsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.activity.ProductDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.activity.CouponActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.activity.InviteFriendsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.activity.NewGuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.activity.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.activity.FinancialProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.activity.AssetSafetyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.activity.DisclaimerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.activity.FinacialProductDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.activity.ConfirmOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.activity.AddressManagementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.activity.EditAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.activity.AddAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.activity.SelectProvinceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.activity.SelectCityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.activity.SelectDistrictActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.activity.PurchaseAmountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.activity.PayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.activity.PayCouponActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.activity.CommonH5Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.home.activity.BoughtSuccessActivity"
+            android:screenOrientation="portrait" />
+        <!-- 主页Activities End -->
+
+        <!-- 产品Activities Start -->
+
+        <!-- 产品Activities End -->
+
+        <!-- 资产Activities Start -->
+        <activity
+            android:name=".module.assets.activity.TransactionRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.assets.activity.EarningRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.assets.activity.RechargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.assets.activity.WithdrawActivity"
+            android:screenOrientation="portrait" />
+        <!-- 资产Activities End -->
+
+        <!-- 我的Activities Start -->
+        <activity
+            android:name=".module.me.activity.SecondAboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.me.activity.NotificationCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.me.activity.NotificationListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.me.activity.MyBankCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.me.activity.FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.me.activity.AccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.me.activity.ForgetPswActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.me.activity.ModifyPswActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.me.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.me.activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.me.activity.UserAgreementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.me.activity.LoginByPswActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.me.activity.AddBankCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.me.activity.ChooseProvinceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.me.activity.ChooseCityActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的Activities End -->
+
+        <!-- 国付宝Activities End -->
+        <activity android:name="com.gopay.mobilepaybygopay_wap.GopayByWap"/>
+        <activity android:name="com.gopay.mobilepaybygopay_wap.GopayTools"/>
+        <!-- 国付宝Activities End -->
+
+        <!-- 极光推送Receiver Start -->
+        <receiver
+            android:name=".module.push.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.chinayszc.mobile" />
+            </intent-filter>
+        </receiver>
+        <!-- 极光推送Receiver End -->
+        <!-- Application ContentProvider Start -->
+        <provider
+            android:name=".database.MyProvider"
+            android:authorities="com.chinayszc.mobile"
+            android:exported="false" />
+        <!-- Application ContentProvider End -->
+
+    </application>
+
+</manifest>

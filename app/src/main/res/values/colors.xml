@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <color name="colorPrimary">#FA9400</color>
+    <color name="colorPrimaryDark">#3F51B5</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorApp">#FA9400</color>
+    <color name="colorPrimaryBlue">#009eff</color>
+
+    <color name="app_bg_color">#EFF0F1</color>
+    <color name="line_color">#d5dbdb</color>
+    <color name="common_button_bg">#F85948</color>
+    <color name="common_button_bg_clicked">#ff8a7d</color>
+    <color name="gray_button_bg">#e8e8e8</color>
+    <color name="gray_button_bg_clicked">#f8f4f4</color>
+    <color name="title_back_clicked">#0f8ddc</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="text_dark">#333333</color>
+    <color name="text_gray">#999999</color>
+    <color name="text_light">#9AAEDB</color>
+    <color name="text_orange">#FF9065</color>
+    <color name="text_red">#ff0000</color>
+    <color name="text_bule">#1296db</color>
+    <color name="text_light_red">#F85948</color>
+    <color name="coupon_text_gray">#cdcdcd</color>
+    <color name="btn_gray">#cccccc</color>
+
+    <color name="coupon_text_bg">#c0c0c0</color>
+    <color name="my_bank_card_bg">#ff0e0e</color>
+    <color name="item_selected_bg">#eef2f2</color>
+    <color name="verify_code_color">#cc8d0e</color>
+    <color name="product_bg">#1296db</color>
+    <color name="translucent_white_start">#ffffff</color>
+    <color name="translucent_end">#82ffffff</color>
+</resources>

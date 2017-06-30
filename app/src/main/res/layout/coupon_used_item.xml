@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/coupon_used_icon"
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:background="@mipmap/coupon_icon_bg_used"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:text="+30.00%"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_super_large"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/coupon_used_tyep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/coupon_type_text_gray"
+            android:padding="3dp"
+            android:text="加息券"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_super_small" />
+
+        <TextView
+            android:id="@+id/coupon_used_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="1天加息券"
+            android:textColor="@color/coupon_text_gray"
+            android:textSize="@dimen/text_13" />
+
+        <TextView
+            android:id="@+id/coupon_used_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="有效期:2017-01-01"
+            android:textColor="@color/coupon_text_gray"
+            android:textSize="@dimen/text_super_small" />
+
+        <TextView
+            android:id="@+id/coupon_used_instruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="移动用户专享"
+            android:textColor="@color/coupon_text_gray"
+            android:textSize="@dimen/text_super_small" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/coupon_used_right_icon"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="used icon"
+        android:src="@mipmap/uses_right_icon" />
+</LinearLayout>

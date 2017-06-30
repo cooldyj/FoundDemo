@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/pro_det_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/product_item_height"
+        android:layout_marginLeft="@dimen/app_margin_left"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_middle"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/product_item_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/product_item_height"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:gravity="center_vertical"
+            android:text="@string/product_total"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_middle" />
+
+        <TextView
+            android:id="@+id/prod_total"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/product_item_height"
+            android:layout_gravity="right"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_middle" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/product_item_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/product_item_height"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:gravity="center_vertical"
+            android:text="@string/expected_annualization"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_middle" />
+
+        <TextView
+            android:id="@+id/prod_expected_annualization"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/product_item_height"
+            android:layout_gravity="right"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_middle" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/product_item_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/product_item_height"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:gravity="center_vertical"
+            android:text="@string/deadline"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_middle" />
+
+        <TextView
+            android:id="@+id/prod_deadline"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/product_item_height"
+            android:layout_gravity="right"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_middle" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/product_item_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/product_item_height"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:gravity="center_vertical"
+            android:text="@string/intrest_day"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_middle" />
+
+        <TextView
+            android:id="@+id/prod_intrest_day"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/product_item_height"
+            android:layout_gravity="right"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_middle" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/product_item_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/product_item_height"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:gravity="center_vertical"
+            android:text="@string/end_day"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_middle" />
+
+        <TextView
+            android:id="@+id/prod_end_day"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/product_item_height"
+            android:layout_gravity="right"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_middle" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/product_item_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/product_item_height"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:gravity="center_vertical"
+            android:text="@string/buy_limit"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_middle" />
+
+        <TextView
+            android:id="@+id/prod_buy_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/product_item_height"
+            android:layout_gravity="right"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_middle" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/product_item_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/product_item_height"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:gravity="center_vertical"
+            android:text="@string/fees"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_middle" />
+
+        <TextView
+            android:id="@+id/prod_fees"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/product_item_height"
+            android:layout_gravity="right"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_middle" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/product_item_height"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:gravity="center_vertical"
+            android:text="@string/income_tax"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_middle" />
+
+        <TextView
+            android:id="@+id/prod_income_tax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_middle" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/product_item_height"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:gravity="center_vertical"
+            android:text="@string/redemption"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_middle" />
+
+        <TextView
+            android:id="@+id/prod_income_redemption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/app_margin_left"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_middle" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_bg_color"
+        android:padding="@dimen/app_margin_left"
+        android:text="@string/supported_banks"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_middle" />
+
+</LinearLayout>
